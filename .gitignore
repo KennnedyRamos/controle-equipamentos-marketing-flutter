@@ -1,0 +1,99 @@
+# ===============================
+# 🔹 SISTEMA / EDITORES
+# ===============================
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+*.tmp
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# ===============================
+# 🔹 FLUTTER / DART
+# ===============================
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+**/doc/api/
+.build/
+build/
+
+# ===============================
+# 🔹 ANDROID
+# ===============================
+android/.gradle/
+android/local.properties
+android/**/build/
+android/app/debug/
+android/app/profile/
+android/app/release/
+
+# 🔐 Keystore (NUNCA subir)
+android/key.properties
+android/*.jks
+android/*.keystore
+
+# Firebase Android
+android/app/google-services.json
+
+# ===============================
+# 🔹 IOS
+# ===============================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Flutter/.last_build_id
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Runner.xcworkspace/
+ios/DerivedData/
+ios/.podspec
+
+# Firebase iOS
+ios/Runner/GoogleService-Info.plist
+
+# ===============================
+# 🔹 WEB
+# ===============================
+web/.dart_tool/
+web/build/
+
+# ===============================
+# 🔹 WINDOWS
+# ===============================
+windows/flutter/ephemeral/
+windows/build/
+
+# ===============================
+# 🔹 LINUX
+# ===============================
+linux/flutter/ephemeral/
+linux/build/
+
+# ===============================
+# 🔹 MACOS
+# ===============================
+macos/flutter/ephemeral/
+macos/build/
+
+# ===============================
+# 🔹 EXCEL / EXPORTS (opcional)
+# ===============================
+*.xlsx
+
+# ===============================
+# 🔹 TESTES / COVERAGE
+# ===============================
+coverage/
+
+# Chaves de assinatura
+key.properties
