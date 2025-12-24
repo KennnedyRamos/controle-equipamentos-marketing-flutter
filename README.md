@@ -43,7 +43,7 @@ Projeto pronto para publicação na **Google Play Store**.
 
 ## 📂 Estrutura do Projeto
 
-```text
+```bash
 lib/
  ├── models/
  │   ├── equipamento_model.dart
@@ -78,116 +78,135 @@ lib/
  │
  ├── firebase_options.dart
  └── main.dart
+```
+---
 
-🔐 Segurança & Boas Práticas
+### 🔐 Segurança & Boas Práticas
 
-🔑 Autenticação segura utilizando Firebase Authentication
+- 🔑 Autenticação segura utilizando Firebase Authentication
 
-🛡️ Regras avançadas de segurança no Firestore, com:
+- 🛡️ Regras avançadas de segurança no Firestore, com:
 
-Validação de tipos
+- Validação de tipos
 
-Controle de acesso por usuário autenticado
+- Controle de acesso por usuário autenticado
 
-Prevenção de escrita de dados inválidos
+- Prevenção de escrita de dados inválidos
 
-✅ Validação de dados no backend via Firestore Rules
+- ✅ Validação de dados no backend via Firestore Rules
 
-🚫 Proteção de informações sensíveis através de .gitignore bem configurado
+- 🚫 Proteção de informações sensíveis através de .gitignore bem configurado
 
-📦 Aplicação pronta para produção seguindo padrões exigidos pela Play Store
+- 📦 Aplicação pronta para produção seguindo padrões exigidos pela Play Store
 
-⚙️ Arquitetura & Configuração do Firebase
+- ⚙️ Arquitetura & Configuração do Firebase
 
-Projeto estruturado seguindo separação clara de responsabilidades:
+---
 
-Models
+### Projeto estruturado seguindo separação clara de responsabilidades:
 
-Services
+- Models
 
-Screens
+- Services
 
-Widgets
+- Screens
 
-Integração completa com Firebase:
+- Widgets
 
-Authentication
+---
 
-Firestore Database (tempo real)
+### Integração completa com Firebase:
 
-Configuração do app Android com assinatura digital (keystore)
+- Authentication
 
-Passos para configuração local
-
-Criar um projeto no Firebase Console
-
-Ativar:
-
-Authentication
-
-Firestore Database
-
-Registrar o aplicativo Android
-
-Adicionar o arquivo:
-
-android/app/google-services.json
+- Firestore Database (tempo real)
 
 
-⚠️ Arquivo sensível — não versionado no GitHub
+- Configuração do app Android com assinatura digital (keystore)
 
-📦 Build & Publicação
+- Passos para configuração local
 
-Aplicação preparada para ambiente de produção:
+- Criar um projeto no Firebase Console
 
-Gerar APK (testes internos)
+- Ativar:
+
+- Authentication
+
+- Firestore Database
+
+- Registrar o aplicativo Android
+
+- Adicionar o arquivo:
+
+```android/app/google-services.json```
+
+
+-⚠️ Arquivo sensível — não versionado no GitHub
+
+---
+
+### 📦 Build & Publicação
+
+- Aplicação preparada para ambiente de produção:
+
+- Gerar APK (testes internos)
+```bash
 flutter build apk --release
+```
 
-Gerar AAB (publicação na Play Store)
+- Gerar AAB (publicação na Play Store)
+```bash
 flutter build appbundle
+```
+
+- 📁 Outputs:
+
+```build/app/outputs/```
+
+---
+
+### 📱 Plataformas Suportadas
+
+- ✅ Android
+
+- ❌ iOS
+
+- Não configurado devido ao uso de MediaStore para exportação de arquivos
+
+- 📊 Funcionalidades Técnicas Relevantes
+
+- 📦 CRUD completo com Firestore
+
+- 🔄 Atualização em tempo real
+
+- 📸 Captura e seleção de imagens (câmera e galeria)
+
+- 🖼️ Visualização de imagens em tela cheia (zoom)
+
+- 📊 Exportação de dados para Excel (.xlsx) sem dependência de backend
+
+- 📂 Armazenamento local eficiente para imagens
+
+- 🔐 Controle de acesso por autenticação
+
+---
+
+### 📌 Observações Técnicas Importantes
+
+- As imagens são armazenadas localmente no dispositivo
+
+- Apenas o caminho da imagem é salvo no Firestore
+
+- Exportação para Excel funciona offline
+
+- Projeto utiliza apenas bibliotecas gratuitas
+
+- Código preparado para fácil manutenção e escalabilidade
 
 
-📁 Outputs:
+---
 
-build/app/outputs/
-
-📱 Plataformas Suportadas
-
-✅ Android
-
-❌ iOS
-
-Não configurado devido ao uso de MediaStore para exportação de arquivos
-
-📊 Funcionalidades Técnicas Relevantes
-
-📦 CRUD completo com Firestore
-
-🔄 Atualização em tempo real
-
-📸 Captura e seleção de imagens (câmera e galeria)
-
-🖼️ Visualização de imagens em tela cheia (zoom)
-
-📊 Exportação de dados para Excel (.xlsx) sem dependência de backend
-
-📂 Armazenamento local eficiente para imagens
-
-🔐 Controle de acesso por autenticação
-
-📌 Observações Técnicas Importantes
-
-As imagens são armazenadas localmente no dispositivo
-
-Apenas o caminho da imagem é salvo no Firestore
-
-Exportação para Excel funciona offline
-
-Projeto utiliza apenas bibliotecas gratuitas
-
-Código preparado para fácil manutenção e escalabilidade
-
-👨‍💻 Autor
+### 👨‍💻 Autor
 
 Desenvolvido por Kennedy Ramos
 Desenvolvedor Flutter 🚀
@@ -196,10 +215,12 @@ Desenvolvedor Flutter 🚀
 
 🔗 LinkedIn: https://www.linkedin.com/in/kennedy-ramos/
 
-📄 Licença
+---
 
-Projeto de uso interno.
-Distribuição não autorizada sem consentimento do autor.
+### 📄 Licença
+
+- Projeto de uso interno.
+- Distribuição não autorizada sem consentimento do autor.
 
 ---
 
